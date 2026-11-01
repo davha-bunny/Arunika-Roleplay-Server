@@ -1,0 +1,54 @@
+{"level":"debug","message":"Marketplace service started","module":"marketplace","timestamp":"2026-11-01T06:56:02.063Z"}
+{"level":"debug","message":"Call service started","module":"calls","timestamp":"2026-11-01T06:56:02.067Z"}
+{"level":"debug","message":"Player Service started","module":"player","timestamp":"2026-11-01T06:56:02.067Z"}
+{"level":"info","message":"Loading QBX bridge....","timestamp":"2026-11-01T06:56:02.068Z"}
+{"level":"info","message":"QBX bridge initialized","timestamp":"2026-11-01T06:56:02.068Z"}
+{"level":"debug","message":"Boot service started","module":"boot","timestamp":"2026-11-01T06:56:02.069Z"}
+{"level":"debug","message":"Messages service started","module":"messages","timestamp":"2026-11-01T06:56:02.069Z"}
+{"level":"debug","message":"Notes service started","module":"notes","timestamp":"2026-11-01T06:56:02.070Z"}
+{"level":"debug","message":"Contacts service started","module":"contact","timestamp":"2026-11-01T06:56:02.070Z"}
+{"level":"debug","message":"Photo service started","module":"photo","timestamp":"2026-11-01T06:56:02.084Z"}
+{"level":"debug","message":"Twitter service started","module":"twitter","timestamp":"2026-11-01T06:56:02.085Z"}
+{"level":"debug","message":"Match service started","module":"match","timestamp":"2026-11-01T06:56:02.086Z"}
+{"level":"debug","message":"Beginning database schema validation","module":"boot","timestamp":"2026-11-01T06:56:03.513Z"}
+{"level":"info","message":"Successfully started","timestamp":"2026-11-01T06:56:03.535Z"}
+{"level":"info","message":"Executed query (SELECT COUNT(*) as count\n                       FROM information_schema.tables\n                       WHERE table_schema = ?\n                         AND table_name = ? [\"Qbox_E6DB5B\",\"players\"]) in 196.5025ms'","module":"DBInterface","timestamp":"2026-11-01T06:56:03.711Z"}
+{"level":"info","message":"Executed query (SHOW COLUMNS IN players []) in 28.2612ms'","module":"DBInterface","timestamp":"2026-11-01T06:56:03.740Z"}
+{"level":"debug","message":"Database schema successfully validated","module":"boot","timestamp":"2026-11-01T06:56:03.740Z"}
+{"level":"info","message":"New NPWD Player added through event (1) (YTEAY0M5)","module":"player","timestamp":"2026-11-01T06:58:37.861Z"}
+{"level":"debug","message":{"_firstname":"Mas","_identifier":"YTEAY0M5","_lastname":"Prajo","_phoneNumber":"5016413440","source":1,"username":"MasPrajoo"},"module":"player","timestamp":"2026-11-01T06:58:37.863Z"}
+{"level":"info","message":"New NPWD Player added through event (1) (YTEAY0M5)","module":"player","timestamp":"2026-11-01T06:58:37.872Z"}
+{"level":"debug","message":{"_firstname":"Mas","_identifier":"YTEAY0M5","_lastname":"Prajo","_phoneNumber":"5016413440","source":1,"username":"MasPrajoo"},"module":"player","timestamp":"2026-11-01T06:58:37.872Z"}
+{"level":"silly","message":"netPromise > npwd:fetchTweets > RequestObj","module":"events","timestamp":"2026-11-01T06:58:37.919Z"}
+{"level":"silly","message":{"data":{"pageId":0},"source":1},"module":"events","timestamp":"2026-11-01T06:58:37.920Z"}
+{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"YTEAY0M5\"]) in 28.9678ms'","module":"DBInterface","timestamp":"2026-11-01T06:58:37.950Z"}
+{"level":"warn","message":"Aborted fetching tweets for user YTEAY0M5 because they do not have a profile.","module":"twitter","timestamp":"2026-11-01T06:58:37.950Z"}
+{"level":"silly","message":"Response Promise Event npwd:fetchTweets:a27dc583-6343-4aac-b05e-effdd36f8d5c (31.0268ms), Data >>","module":"events","timestamp":"2026-11-01T06:58:37.950Z"}
+{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2026-11-01T06:58:37.950Z"}
+{"level":"silly","message":"netPromise > npwd:getOrCreateTwitterProfile > RequestObj","module":"events","timestamp":"2026-11-01T06:58:38.039Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2026-11-01T06:58:38.040Z"}
+{"level":"silly","message":"netPromise > phone:getMyProfile > RequestObj","module":"events","timestamp":"2026-11-01T06:58:38.041Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2026-11-01T06:58:38.041Z"}
+{"level":"silly","message":"netPromise > npwd:fetchMessageGroups > RequestObj","module":"events","timestamp":"2026-11-01T06:58:38.047Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2026-11-01T06:58:38.047Z"}
+{"level":"silly","message":"netPromise > npwd-contact-getAll > RequestObj","module":"events","timestamp":"2026-11-01T06:58:38.049Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2026-11-01T06:58:38.049Z"}
+{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"YTEAY0M5\"]) in 29.7545ms'","module":"DBInterface","timestamp":"2026-11-01T06:58:38.070Z"}
+{"level":"info","message":"Creating default Twitter profile Mas_Prajo for YTEAY0M5","module":"twitter","timestamp":"2026-11-01T06:58:38.071Z"}
+{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"YTEAY0M5\"]) in 2.9753ms'","module":"DBInterface","timestamp":"2026-11-01T06:58:38.090Z"}
+{"level":"silly","message":"Response Promise Event npwd:getOrCreateTwitterProfile:9dfbe108-10c4-410a-8996-f6adb4a7f904 (50.74ms), Data >>","module":"events","timestamp":"2026-11-01T06:58:38.090Z"}
+{"level":"info","message":"Executed query (SELECT * FROM npwd_phone_contacts WHERE identifier = ? ORDER BY display ASC [\"YTEAY0M5\"]) in 52.7816ms'","module":"DBInterface","timestamp":"2026-11-01T06:58:38.102Z"}
+{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"YTEAY0M5\"]) in 62.9311ms'","module":"DBInterface","timestamp":"2026-11-01T06:58:38.104Z"}
+{"level":"silly","message":{"data":{"avatar_url":"https://i.fivemanage.com/images/3ClWwmpwkFhL.png","createdAt":"2026-11-01T06:58:38.000Z","id":1,"identifier":"YTEAY0M5","profile_name":"Mas_Prajo","updatedAt":"2026-11-01T06:58:38.000Z"},"status":"ok"},"module":"events","timestamp":"2026-11-01T06:58:38.091Z"}
+{"level":"silly","message":"Response Promise Event npwd-contact-getAll:62f5ed66-fafc-43fd-9c07-299c0557667e (53.8471ms), Data >>","module":"events","timestamp":"2026-11-01T06:58:38.103Z"}
+{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2026-11-01T06:58:38.103Z"}
+{"level":"info","message":"Creating default match profile Mas Prajo for YTEAY0M5","module":"match","timestamp":"2026-11-01T06:58:38.104Z"}
+{"level":"info","message":"Executed query (SELECT npwd_messages_conversations.id,\n                          npwd_messages_conversations.conversation_list         as conversationList,\n                          npwd_messages_participants.unread_count               as unreadCount,\n                          npwd_messages_conversations.is_group_chat             as isGroupChat,\n                          npwd_messages_conversations.label,\n                          UNIX_TIMESTAMP(npwd_messages_conversations.updatedAt) as updatedAt,\n                          npwd_messages_participants.participant\n                   FROM npwd_messages_conversations\n                            INNER JOIN npwd_messages_participants\n                                       on npwd_messages_conversations.id = npwd_messages_participants.conversation_id\n                   WHERE npwd_messages_participants.participant = ? [\"5016413440\"]) in 70.6054ms'","module":"DBInterface","timestamp":"2026-11-01T06:58:38.118Z"}
+{"level":"silly","message":"Response Promise Event npwd:fetchMessageGroups:c856e39d-6012-4846-b6c3-c66238a518f1 (71.601ms), Data >>","module":"events","timestamp":"2026-11-01T06:58:38.119Z"}
+{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2026-11-01T06:58:38.119Z"}
+{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"YTEAY0M5\"]) in 1.6496ms'","module":"DBInterface","timestamp":"2026-11-01T06:58:38.131Z"}
+{"level":"silly","message":"Response Promise Event phone:getMyProfile:8726e747-608b-42cc-8ccd-dddb061df611 (92.1223ms), Data >>","module":"events","timestamp":"2026-11-01T06:58:38.134Z"}
+{"level":"silly","message":{"data":{"bio":"","createdAt":"2026-11-01T06:58:38.000Z","id":1,"identifier":"YTEAY0M5","image":"https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg","job":"","lastActive":1793516318,"lastActiveFormatted":"Sun, 01 Nov 2026 06:58:38 GMT","location":"","name":"Mas Prajo","tagList":[],"tags":"","updatedAt":"2026-11-01T06:58:38.000Z","viewed":false,"voiceMessage":null},"status":"ok"},"module":"events","timestamp":"2026-11-01T06:58:38.134Z"}
+{"level":"info","message":"Executed query (SELECT id FROM npwd_marketplace_listings WHERE identifier = ? [\"YTEAY0M5\"]) in 42.0861ms'","module":"DBInterface","timestamp":"2026-11-01T07:11:23.910Z"}
+{"level":"info","message":"Executed query (DELETE FROM npwd_marketplace_listings WHERE identifier = ? AND reported = 0 [\"YTEAY0M5\"]) in 5.7145ms'","module":"DBInterface","timestamp":"2026-11-01T07:11:23.916Z"}
+{"level":"info","message":"Unloaded NPWD Player, source: (1)","module":"player","timestamp":"2026-11-01T07:11:23.916Z"}
